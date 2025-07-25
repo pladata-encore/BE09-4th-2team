@@ -80,8 +80,7 @@
 
 ## [MSA 아키텍처 설계서]
 
-<img width="700" height="600" alt="Image" src="https://github.com/user-attachments/assets/ca2b00c3-e9f5-45e8-9368-d6a41e6d1f02" />
-
+<img width="961" height="721" alt="기획_1팀_시스템 아키텍처 drawio" src="https://github.com/user-attachments/assets/2b614e2e-5df1-4733-b4d5-d826de2fb70c" />
 
 ## [테스트 케이스 + 테스트 결과서]
 
