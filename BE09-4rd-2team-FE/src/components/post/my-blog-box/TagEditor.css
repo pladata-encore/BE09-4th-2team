@@ -1,0 +1,52 @@
+.tag-area {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.tag-list {
+    display: flex;
+    gap: 4px;
+}
+
+.tag-item {
+    display: inline-block;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 13px;
+    color: #888; /* 폰트색 연하게 */
+}
+
+.tag-edit-btn {
+    border: 1px solid #ddd;
+    background: #fff;
+    padding: 6px 12px;
+    cursor: pointer;
+    margin-left: 8px;
+    color: #888; /* 폰트색 연하게 */
+}
+
+
+.tag-edit-box {
+    display: flex;
+    width: 100%;       /* 부모 폭 100% */
+}
+
+.tag-edit-box input {
+    flex: 1;           /* 남는 공간 모두 사용 */
+    padding: 6px 12px;
+    border: 1px solid #ddd;
+    background: #f9f9f9;
+}
+
+.tag-cancel-btn,
+.tag-confirm-btn {
+    border: 1px solid #ddd;
+    background: #fff;
+    padding: 6px 12px;
+    cursor: pointer;
+    flex-shrink: 0;    /* 버튼은 크기 줄지 않음 */
+    color: #888; /* 폰트색 연하게 */
+}

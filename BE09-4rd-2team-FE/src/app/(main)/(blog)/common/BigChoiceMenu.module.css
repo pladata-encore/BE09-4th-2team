@@ -1,0 +1,35 @@
+@font-face {
+    font-family: 'NanumSquareB';
+    src: url('/fonts/NanumSquareB.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.menu {
+    display: flex;
+    gap: 24px;
+    max-width: 770px;
+    padding: 16px;
+
+}
+
+.item {
+    color: gray;
+    font-weight: normal;
+    cursor: pointer;
+    padding-bottom: 4px;
+    border-bottom: 4px solid transparent;
+    transition: color 0.2s, border-bottom 0.2s;
+    font-family: 'NanumSquareB', sans-serif;
+}
+
+.itemSelected {
+    color: black;
+    font-weight: bold;
+    border-bottom: 3px solid black;
+}
+
+.item:hover {
+    color: black;
+    font-weight: bold;
+}

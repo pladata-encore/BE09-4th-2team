@@ -1,0 +1,14 @@
+.tag-buttons {
+    display: flex;
+    gap: 6px;
+}
+
+.tag-btn {
+    border: 1px solid #ddd;
+    background: #f9f9f9;
+    color: #666; /* 연한 폰트색 */
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-size: 13px;
+    cursor: pointer;
+}

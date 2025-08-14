@@ -1,0 +1,17 @@
+.editor-container {
+    display: flex;
+    justify-content: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.se_editor_wrap {
+    width: 100%;
+    min-height: 800px; /* 👉 원하는 높이 예: 600px */
+    max-width: 1024px;
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+    padding: 2.5rem 2rem;
+    margin: 0 auto;
+}

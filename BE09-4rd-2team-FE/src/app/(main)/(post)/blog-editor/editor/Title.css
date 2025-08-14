@@ -1,0 +1,18 @@
+.se_title {
+    width: 100%;
+    font-size: 32px;
+    font-weight: 340;
+    outline: none;
+    padding: 0.6rem;
+}
+
+.se_title:empty::before {
+    content: attr(data-placeholder);
+    color: #999;
+}
+
+.se_title_wrap {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+}

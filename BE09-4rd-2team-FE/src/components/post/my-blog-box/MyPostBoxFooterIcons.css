@@ -1,0 +1,86 @@
+.post-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.post-actions {
+    display: flex;
+    gap: 8px;
+}
+
+.action-btn {
+    border: 1px solid #ddd;
+    background: none;
+    padding: 6px 12px;
+    cursor: pointer;
+}
+
+.post-icons-manage {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.share-icons {
+    display: flex;
+    gap: 8px;
+}
+
+.icon-btn {
+    width: 30px;
+    height: 30px;
+    border: none;
+    background-image: url('https://ssl.pstatic.net/static/common/spi/2024/0607/sp_spi_layer.png'); /* 스프라이트 URL */
+    background-repeat: no-repeat;
+    background-size: 282px 265px;
+    cursor: pointer;
+    text-indent: -9999px;
+}
+
+.icon-btn.cafe-spi {
+    background-position: -166px -210px;
+}
+
+.icon-btn.keep-spi {
+    background-position: -252px 0px;
+}
+
+.icon-btn.memo-spi {
+    background-position: -252px -64px;
+}
+
+.icon-btn.realse-spi {
+    background-position: -252px -96px;
+}
+
+/* 나머지 아이콘은 동일 패턴으로 background-position만 변경 */
+.manage-btns {
+    display: flex;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.owner-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    border: none;
+    padding: 6px 12px;
+    font-size: 14px;
+    color: #333;
+    text-decoration: none; /* 링크 밑줄 제거 */
+    cursor: pointer;
+}
+
+.owner-btn + .owner-btn {
+    border-left: 1px solid #ddd; /* 앞 버튼과 구분선 */
+}
+
+.owner-btn:hover {
+    background: #f9f9f9;
+}
+

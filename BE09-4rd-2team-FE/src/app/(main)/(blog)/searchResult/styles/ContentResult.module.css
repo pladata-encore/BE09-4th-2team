@@ -1,0 +1,120 @@
+.resultList {
+    font-family: 'NanumGothic', sans-serif;
+    max-width: 1032px;
+    margin: 0 auto;
+    padding: 0 16px;
+    list-style: none;
+}
+
+.blogItem {
+    width: 100%;
+    margin: 16px 0;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 22px;
+    max-height: 180px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: stretch;
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.cardRow {
+    display: flex;
+    align-items: stretch;
+    gap: 32px;
+    width: 100%;
+    height: 100%;
+}
+
+.cardContent {
+    flex: 1 1 0;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.thumbnailBox {
+    flex-shrink: 0;
+    width: 160px;
+    height: 160px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    position: relative;
+    border-radius: 2px;
+    overflow: hidden;
+    background: #fafafa;
+    margin: auto 0;
+}
+
+.titleLink {
+    display: block;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 12px;
+    text-decoration: none;
+    color: #222;
+}
+.titleLink:hover {
+    text-decoration: underline;
+}
+
+.contentLink {
+    display: block;
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 22px;
+    text-decoration: none;
+    line-height: 1.7;
+}
+.contentLink:hover {
+    text-decoration: underline;
+}
+
+.profileRow {
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    color: #444;
+    gap: 8px;
+}
+
+.profileImage {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.nickname {
+    font-weight: bold;
+}
+
+.profileDivider {
+    color: #aaa;
+    margin: 0 4px;
+    font-size: 13px;
+}
+
+.profileEtc {
+    color: #666;
+    font-size: 15px;
+}
+
+.authorDate {
+    color: #999;
+    font-size: 14px;
+    margin-left: 2px;
+}
+
+.thumbnailImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 2px;
+}

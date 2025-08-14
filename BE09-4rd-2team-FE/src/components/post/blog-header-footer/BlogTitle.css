@@ -1,0 +1,13 @@
+.blog-title-wrapper {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.blog-title {
+  text-align: right;
+  font-size: 30px;
+  padding: 20px;
+  max-width: 982px;
+  width: 100%;
+  margin: 0px auto;
+}

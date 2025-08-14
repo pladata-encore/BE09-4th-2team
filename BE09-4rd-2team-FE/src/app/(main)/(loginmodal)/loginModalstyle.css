@@ -1,0 +1,153 @@
+
+/* 로그인 css */
+
+.ugc-login{
+    width: 252px;
+    padding: 17px 13px 12px;
+    height: 104px;
+}
+
+.top-text{
+    margin: 0 0 12px;
+    line-height: 14px;
+    letter-spacing: -0.1px;
+    font-size: 12px;
+    color: #808080;
+}
+
+.login-button{
+    width:252px;
+    height: 48px;
+    background-color: #03c75a;
+    color: white;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.login-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.left-links {
+    display: flex;
+    gap: 10px; /* 간격 주기 */
+}
+
+/* 로그인 한 후 페이지 */
+
+.mypage-widget {
+    width: 280px;
+    border: 1px solid #ddd;
+    padding: 12px;
+    font-family: sans-serif;
+    background: #fff;
+}
+
+.profile-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.profile-left {
+    display: flex;
+    gap: 8px;
+}
+
+.avatar {
+    width: 40px;
+    height: 40px;
+    background: #ccc;
+    border-radius: 50%;
+}
+
+.nickname {
+    font-weight: bold;
+}
+
+.visit {
+    font-size: 12px;
+    color: #666;
+}
+
+.green {
+    color: green;
+}
+
+.logout-btn {
+    font-size: 12px;
+    padding: 4px 8px;
+    border: 1px solid #aaa;
+    background: #f9f9f9;
+    cursor: pointer;
+}
+
+.top-tabs {
+    display: flex;
+    margin-top: 10px;
+}
+
+.tab {
+    flex: 1;
+    text-align: center;
+    padding: 6px;
+    background: #f0f0f0;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.tab.active {
+    background: #00c73c;
+    color: white;
+}
+
+.sub-tabs {
+    display: flex;
+    margin-top: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.sub-tab {
+    flex: 1;
+    text-align: center;
+    padding: 6px;
+    font-size: 13px;
+    cursor: pointer;
+    color: #888;
+    border-bottom: 2px solid transparent;
+}
+
+.sub-tab.active {
+    border-bottom: 2px solid black;
+    color: black;
+}
+
+.alert-card {
+    background:white;
+    padding: 10px;
+    margin-top: 15px;
+    font-size: 13px;
+
+}
+
+.from {
+    font-weight: bold;
+    color: #333;
+}
+
+.answer {
+    color: #00c73c;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.neighbor-list{
+    display: flex;
+
+}
+
+.neighbor-card{
+    width: 120px;
+}

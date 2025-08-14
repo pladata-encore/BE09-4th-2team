@@ -1,0 +1,27 @@
+/* 본문 영역 스타일 */
+.se_content {
+    width: 100%;               /* 가로 100% */
+    max-width: 1000px;          /* 최대 너비 720px로 중앙 정렬 */
+    margin: 0 auto;            /* 좌우 여백 auto로 중앙 정렬 */
+    padding: 5px 0;           /* 상하 여백 */
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 15px;           /* 본문 글씨 크기 */
+    line-height: 4;          /* 줄 간격 */
+    outline: none;             /* 포커스시 외곽선 제거 */
+}
+
+/* 본문이 비어있을 때 placeholder 처럼 보이게 */
+.se_content:empty:before {
+    content: "나만의 일상을 기록으로 남겨보세요!";  /* placeholder 문구 직접 삽입 */
+    color: #aaa;                /* 연한 회색 */
+    pointer-events: none;      /* 텍스트 선택 불가 */
+}
+
+.se_content img {
+    max-width: 100%;
+    height: auto;
+    cursor: pointer;
+    resize: both;
+    overflow: auto;
+    display: inline-block;
+}

@@ -1,0 +1,84 @@
+/* 모달 내부 발행 설정창 박스 */
+.publish-options {
+    /* 중앙정렬은 부모 모달이 함, 위치 고정 불필요 */
+    top: 50px;
+    right: 0;
+    width: 400px;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 50px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    z-index: 1000;
+    font-family: Arial, sans-serif;
+}
+
+/* 타이틀 */
+.publish-options .title {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* 각 설정 영역 줄 */
+
+.option-row {
+    display: flex;
+    font-size: 12px;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ddd; /* 줄 추가 */
+    padding: 12px 0;
+}
+
+/* 왼쪽 라벨 */
+.option-row .label {
+    display: inline-block;
+    width: 80px;
+    margin-bottom: 4px;
+
+}
+
+/* 셀렉트/텍스트박스 */
+.option-row select,
+.option-row input[type="text"] {
+    width: 80%;
+    padding: 6px 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+/* 체크박스 그룹 - 옆으로, 오른쪽 공간 채우기 */
+.checkbox-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    flex: 1;               /* 남은 공간 모두 사용 */
+}
+
+/* 체크박스 라벨 */
+.checkbox-group label {
+    font-size: 13px;
+}
+
+/* 하단 버튼 영역 */
+.actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+    margin-top: 12px;
+}
+
+.actions button {
+    padding: 6px 12px;
+    border: 1px solid #ddd;
+    background: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* 발행 버튼 스타일 */
+.actions .publish-btn {
+    background: #03c75a;
+    color: #fff;
+    border: none;
+}

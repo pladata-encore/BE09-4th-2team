@@ -1,0 +1,30 @@
+/* === 공통 스프라이트 아이콘 스타일 === */
+[class^="bg-"] {
+    display: inline-block;
+    width: 24px;    /* 출력 크기 */
+    height: 24px;
+    background-image: url('/images/editor/inserttoolbar/css_sprites.png');
+    background-repeat: no-repeat;
+    background-size: 168px auto;  /* 원본 가로 350px → 24/50 = 48% → 350*0.48 ≈ 168px */
+}
+
+/* === 축소된 아이콘별 좌표 === */
+.bg-calendar { background-position: -4.8px -4.8px; }
+.bg-divider { background-position: -38.4px -4.8px; }
+.bg-draft { background-position: -4.8px -38.4px; }
+.bg-file { background-position: -38.4px -38.4px; }
+.bg-formula { background-position: -72px -4.8px; }
+.bg-library { background-position: -72px -38.4px; }
+.bg-link { background-position: -4.8px -72px; }
+.bg-location { background-position: -38.4px -72px; }
+.bg-mybox { background-position: -72px -72px; }
+.bg-myclip { background-position: -105.6px -4.8px; }
+.bg-photo { background-position: -105.6px -38.4px; }
+.bg-quote { background-position: -105.6px -72px; }
+.bg-review { background-position: -4.8px -105.6px; }
+.bg-sourcecode { background-position: -38.4px -105.6px; }
+.bg-sticker { background-position: -72px -105.6px; }
+.bg-table { background-position: -105.6px -105.6px; }
+.bg-template { background-position: -139.2px -4.8px; }
+.bg-video { background-position: -139.2px -38.4px; }
+.bg-download { background-position: -139.2px -72px; }

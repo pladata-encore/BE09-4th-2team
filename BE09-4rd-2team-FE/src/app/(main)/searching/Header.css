@@ -1,0 +1,218 @@
+body {
+  margin: 0;
+}
+
+.header-common {
+  box-sizing: content-box;
+  height: 54px;
+  background-color: #03c75a;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  color: #fff;
+  margin: 0;
+}
+
+.inner {
+  position: relative;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  max-width: 1032px;   /* 노트북 화면 가로폭에 맞춘 컨테이너 최대 너비 */
+  margin: 0 auto;      /* 가운데 정렬 */
+  padding: 0 16px;     /* 좌우 여백 */
+}
+
+/* 로고 영역 */
+.area-logo {
+  display: flex;
+  align-items: center;
+  padding: 4px;
+}
+
+.logo-naver-blog {
+  width: 94px;
+  display: flex;
+  align-items: center;
+}
+
+.link-naver {
+  display: flex;
+  width: 48px;
+  height: 26px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='26' height='26'%3E%3Cpath d='M26 0v26H0V0h26zM11 7.049H6.54V18.95h4.4v-6.16l4.22 6.161h4.459V7.05H15.22v6.16L11 7.05z' fill='%23FFF' fill-rule='evenodd'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-origin: content-box;
+  background-size: contain;
+}
+
+.link-blog {
+  display: flex;
+  width: 48px;
+  height: 26px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='48' height='26' fill='none'%3E%3Cpath fill='%23fff' fill-rule='evenodd' d='M13.1 7.158V4c2.842.277 5.42 1.997 5.42 5.625v10.376h-3.503V9.625c0-1.407-.713-2.234-1.918-2.467Zm-9.386 2.26c.77-.887 1.915-1.425 3.48-1.425v.001c3.061 0 5.584 2.687 5.584 6.167s-2.524 6.167-5.584 6.167c-1.564 0-2.71-.537-3.48-1.425v1.098H.21V4.427h3.504v4.991Zm-.229 4.743c0 1.897 1.265 3.085 3.009 3.085s3.008-1.188 3.008-3.085c0-1.896-1.264-3.084-3.008-3.084s-3.009 1.188-3.009 3.084Zm17.111 0c0-3.481 2.756-6.168 6.19-6.168 3.433 0 6.19 2.687 6.19 6.167s-2.756 6.167-6.19 6.167c-3.433 0-6.19-2.686-6.19-6.167Zm3.283 0c0 1.795 1.264 2.983 2.907 2.983s2.907-1.19 2.907-2.984-1.264-2.982-2.907-2.982-2.907 1.187-2.907 2.982Zm23.314-5.84h-3.41v1.19c-.77-.957-1.893-1.518-3.41-1.518-3.318 0-5.747 2.71-5.747 5.934s2.43 5.933 5.746 5.933c1.518 0 2.64-.56 3.411-1.519v1.075c0 1.659-1.005 2.5-2.64 2.5h-.116v3.083c3.108 0 6.167-1.659 6.167-5.583V8.321Zm-6.236 8.539c-1.795 0-3.058-1.188-3.058-2.932s1.264-2.932 3.058-2.932c1.795 0 3.059 1.188 3.059 2.932s-1.264 2.932-3.059 2.932Z' clip-rule='evenodd'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-origin: content-box;
+  background-size: contain;
+}
+
+/* 블라인드 텍스트 */
+.blind {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+}
+
+/* 검색창 */
+.area-search {
+  margin-left: 12px;
+  height: 37px;
+  display: flex;
+  align-items: center;
+
+  flex-wrap: nowrap;
+}
+
+.fieldset {
+  margin: 0px;
+  border: 0px;
+  display: flex;
+  align-items: center;
+  /* width: 427px; */
+  flex-wrap: nowrap;
+  flex-direction: row;
+}
+
+.search {
+  display: flex;
+  width: 322px;
+  height: 37px;
+  border: 1px solid #05ab4f;
+  border-right: 0;
+  background-color: #fff;
+}
+
+.area-dropdown {
+  width: 99px;
+  height: 35px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  position: relative;
+}
+
+.dropdown-select {
+  position: absolute;
+  top: 36px;
+  left: 0;
+  width: 100%;
+  background: #fff;
+  border: 1px solid #e3e3e3;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  z-index: 10;
+  border-radius: 0 0 4px 4px;
+  overflow: hidden;
+}
+
+.dropdown-select .item {
+  display: block;
+  padding: 8px 16px;
+  color: #222;
+  font-size: 13px;
+  cursor: pointer;
+  transition: background 0.2s;
+  text-decoration: none;
+  font-family: NanumGothic, sans-serif;
+}
+
+.dropdown-select .item.selected,
+.dropdown-select .item[aria-selected="true"] {
+  background: #f6f6f6;
+  color: #03c75a;
+}
+
+.dropdown-select .item:hover {
+  background: #f7f7f7;
+  color: #00ab33;
+}
+
+/* 선택된 옵션 */
+.selected-option {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 600;
+  color: #00ab33;
+  height: 35px;
+  padding-left: 8px;
+  white-space: nowrap;
+  width: 90%;
+  justify-content: space-between;
+  gap : 0;
+  text-decoration: none;
+  font-family: NanumGothic, sans-serif;
+}
+
+.icon-arrow {
+  display: flex;
+  align-self: center;
+  background-image: url("https://ssl.pstatic.net/static/blog/sp_common_82544d1d.svg");
+  background-position: -1011px -332px; /* 스프라이트 위치 */
+  width: 8px; /* 실제 화살표 크기 */
+  height: 4px;
+  margin-left: 4px; /* 텍스트와 간격 */
+  background-repeat: no-repeat;
+  vertical-align: middle;
+}
+
+.textbox {
+  width: 222px;
+  height: 35px;
+  border: 0;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 16px;
+  text-indent: 10px;
+}
+
+/* 버튼 스타일 */
+.button {
+  height: 37px;
+  background-color: #03b150;
+  border: 1px solid #05ab4f;
+  text-align: center;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button-blog {
+  vertical-align: center;
+  width: 37px;
+  height: 37px;
+}
+
+.icon-search {
+  width: 18px;
+  height: 18px;
+  background-image: url(https://ssl.pstatic.net/static/blog/sp_common_82544d1d.svg);
+  background-position: -476px -547px;
+}
+
+.button-naver {
+  margin-left: 4px;
+  float: left;
+  height: 37px;
+  background-color: #03b150;
+  border: 1px solid #05ab4f;
+  text-align: center;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+  font-size: 13px;
+}

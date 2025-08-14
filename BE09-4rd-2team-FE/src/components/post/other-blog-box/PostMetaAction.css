@@ -1,0 +1,85 @@
+.more-menu-wrapper {
+    position: relative; /* 기준점 */
+}
+
+.neighbor-button {
+    border: 1px solid #999;
+    background: #fff;
+    padding: 4px 10px;
+    font-size: 13px;
+    cursor: pointer;
+    color: #555;
+}
+
+.more-menu {
+    background: none;
+    font-size: 20px;
+    color: #999;
+    cursor: pointer;
+}
+
+/* 오버플로우 창 (수정하기, 삭제하기) */
+.overflow-menu {
+    position: absolute;
+    top: 28px;
+    right: 0;
+    min-width: 180px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    /*overflow: hidden;*/
+    z-index: 100;
+}
+
+.menu-item {
+    position: relative;
+    display: block;
+    padding: 12px 55px 12px 13px; /* 좌 13px, 우 55px 충분 */
+    font-size: 14px;
+    font-family: se-nanumgothic, arial, 나눔고딕, sans-serif;
+    text-decoration: none;
+    color: #333;
+    overflow: visible; /* 아이콘 잘림 방지 */
+    line-height: normal; /* 기본 라인 높이 사용 */
+}
+
+
+.menu-item.modify {
+    border-bottom: 1px solid #eee;
+}
+
+.menu-item.share {
+    border-bottom: 1px solid #eee;
+}
+
+.menu-item.delete {
+    color: #e74c3c; /* 삭제: 빨강 */
+}
+
+.menu-item:hover {
+    background: #f8f9fa;
+}
+
+.menu-item.modify:hover {
+    color: #0074cc; /* 수정: 파랑 */
+}
+
+.menu-item.share:hover {
+    color: #555;   /* 공유: 회색 계열 유지 */
+}
+
+.menu-item.delete:hover {
+    color: #e74c3c; /* 삭제: 빨강 */
+}
+
+.menu-item .ico {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 22px;
+    height: 22px;
+    pointer-events: none;
+}
+
